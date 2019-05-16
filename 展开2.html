@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>展开2</title>
+    <style>
+        .di {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: relative;
+        }
+
+        .dii {
+            width: 300px;
+            height: 0;
+            position: absolute;
+            top: 200px;
+            background-color: #46639c;
+        }
+    </style>
+</head>
+<body>
+<div class="di">
+    <div class="dii"></div>
+</div>
+<script>
+    var di = document.getElementsByClassName("di")[0];
+    var zhankai = 0;
+    di.addEventListener("mouseover", function (e) {
+        if (laqi!=0){
+            clearInterval(laqi);
+            laqi=0;
+        }
+        zhankai = setInterval(function (e) {
+            var dii = document.getElementsByClassName("dii")[0];
+            var h = getComputedStyle(dii).height;
+            h=parseInt(h);
+            h += 10;
+            if (h >= 200) {
+                h = 200;
+                clearInterval(zhankai);
+                zhankai=0;
+            }
+            dii.style.height=h+'px';
+        },200);
+    });
+    var laqi=0;
+    di.addEventListener("mouseout",function (e) {
+        if (zhankai!=0){
+            clearInterval(zhankai);
+            zhankai=0;
+        }
+        laqi=setInterval(function (e) {
+            var dii=document.getElementsByClassName("dii")[0];
+            var h=getComputedStyle(dii).height;
+            h=parseInt(h);
+            h-=10;
+            if (h<=0){
+                h=0;
+                clearInterval(laqi);
+                laqi=0;
+            }
+            dii.style.height=h+'px';
+        },200);
+    })
+</script>
+</body>
+</html>

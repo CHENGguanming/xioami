@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js展开</title>
+    <style>
+        .fa{
+            width: 100px;
+            height: 100px;
+            background-color: #46639c;
+            position: relative;
+        }
+        .son{
+            width: 200px;
+            height: 0px;
+            background-color: aquamarine;
+            position: absolute;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="fa">
+    <div class="son"></div>
+</div>
+<script>
+    var fa=document.getElementsByClassName("fa")[0]
+    var zhankai=0;
+    fa.addEventListener("mouseover",function (e) {
+        if (laqi!=0){
+            clearInterval(laqi);
+            laqi=0;
+        }
+        zhankai=setInterval(function (e) {
+            var son=document.getElementsByClassName("son")[0]
+            var h=getComputedStyle(son).height;//h=son.height(通过样式找到son的高)
+            h=parseInt(h);
+            h+=10;
+            if (h>=100){
+                h=100;
+                clearInterval(zhankai);
+                zhankai=0;
+            }
+            son.style.height=h+'px';
+        },200);
+    });
+    var laqi=0;
+    fa.addEventListener("mouseout",function (e) {
+        if (zhankai!=0){
+            clearInterval(zhankai);
+            zhankai=0;
+        }
+        laqi=setInterval(function (e) {
+            var son=document.getElementsByClassName("son")[0]
+            var h=getComputedStyle(son).height;
+            h=parseInt(h);
+            h-=10;
+            if (h<=0){
+                h=0;
+                clearInterval(laqi);
+                laqi=0
+            }
+            son.style.height=h+'px';
+        },200);
+    })
+</script>
+</body>
+</html>

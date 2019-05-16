@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米商城</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 12px;
+            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+        }
+
+        .top {
+            height: 40px;
+            color: #b0b0b0;
+            background-color: #333;
+        }
+
+        .top-daohang {
+            width: 1226px;
+            margin: 0 auto;
+            height: 40px;
+        }
+
+        .top-dhleft {
+            float: left;
+            width: 1100px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .top a {
+            color: #b0b0b0;
+            text-decoration: none;
+            line-height: 40px;
+        }
+
+        .top span {
+            color: #424242;
+            margin: 0.5em;
+        }
+
+        .top-left {
+            float: left;
+        }
+
+        .top-right {
+            float: right;
+        }
+
+        .top-dhright {
+            float: right;
+            width: 120px;
+            height: 40px;
+        }
+
+        .top-shop {
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .cart {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+        }
+
+        .search {
+            width: 100%;
+            height: 100px;
+        }
+
+        .search-s {
+            width: 1226px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .search-left {
+            float: left;
+            width: 62px;
+            margin-top: 22px;
+        }
+
+        .mi-log {
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            text-align: center;
+            background-image: url(https://account.xiaomi.com/static/res/28f08d0/account-static/respassport/acc-2014/img/milogo.png);
+            background-color: #ff6700;
+        }
+
+        .search-center {
+            float: left;
+            width: 850px;
+            height: 100px;
+        }
+
+        .search-ul {
+            width: 850px;
+            height: 100px;
+            float: left;
+            list-style-type: none;
+        }
+
+        .search-li, .search-space {
+            margin: 0.5em;
+            font-size: 16px;
+            color: #333333;
+        }
+
+        .search-space {
+            line-height: 88px;
+            float: left;
+            width: 127px;
+            height: 88px;
+            padding-right: 15px;
+            visibility: hidden;
+        }
+
+        .search-li {
+            line-height: 88px;
+            float: left;
+        }
+
+        .search-right {
+            width: 296px;
+            height: 100px;
+            line-height: 100px;
+            float: right;
+        }
+
+        .search-input {
+            width: 277px;
+            height: 50px;
+            margin-top: 25px;
+            background-color: #46639c;
+        }
+
+        .search-text {
+            width: 223px;
+            height: 48px;
+            outline: 0;
+            float: left;
+            font-size: 14px;
+            border: 1px solid #e0e0e0;
+
+        }
+
+        .search-submit {
+            width: 52px;
+            height: 50px;
+            outline: 0;
+            float: left;
+            font-size: 24px;
+            border: 1px solid #e0e0e0;
+            background: white;
+        }
+
+        .minine {
+            position: absolute;
+            text-align: right;
+            top: 40px;
+            right: 110px;
+        }
+
+        .mi9, .mi9SE {
+            background: #eeeeee;
+        }
+
+        .search-fa {
+            height: 50px;
+            line-height: 50px;
+            position: absolute;
+            right: 65px;
+        }
+
+        .sfond {
+            font-size: 20px;
+        }
+
+        .Carousel{
+            width: 1226px;
+            height: 460px;
+            margin: 0 auto;
+            background-color: aquamarine;
+        }
+        .Carousel ul{
+            list-style-type: none;
+
+        }
+        .Carousel li{
+            width: 234px;
+            height: 42px;
+
+        }
+        .Carousel a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .category-ul{
+            width: 234px;
+            height: 420px;
+            background: rgba(0,0,0,0.6);
+            font-size: 14px;
+            padding: 20px 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+<div><!--全局div-->
+    <div class="top">
+        <div class="top-daohang"><!--顶部小导航-->
+            <div class="top-dhleft">
+                <div class="top-left">
+                    <a href="#" class="topdh1">小米商城</a>
+                    <span class="top-sp">|</span>
+                    <a href="#" class="topdh2">MIUI</a>
+                    <span class="top-sp">|</span>
+                    <a href="#" class="topdh3">loT</a>
+                    <span class="top-sp">|</span>
+                    <a href="#" class="topdh4">云服务</a>
+                    <span class="top-sp">|</span>
+                    <a href="#" class="topdh5">金融</a>
+                    <span class="top-sp">|</span>
+                    <a href="#" class="topdh6">有品</a>
+                    <span class="top-sp">|</span>
+                    <a href="#" class="topdh">小爱开发平台</a>
+                    <span class="top-sp">|</span>
+                    <a href="#" class="topdh8">企业团购</a>
+                    <span class="top-sp">|</span>
+                    <a href="#" class="topdh9">资质证照</a>
+                    <span class="top-sp">|</span>
+                    <a href="#" class="topdh10">协议规则</a>
+                    <span class="top-sp">|</span>
+                    <a href="#" class="topdh11">下载app</a>
+                    <span class="top-sp">|</span>
+                    <a href="#" class="topdh12">Select Region</a>
+                </div>
+
+                <div class="top-right">
+                    <a href="#" class="topdh13">登录</a>
+                    <span>|</span>
+                    <a href="#" class="topdh14">注册</a>
+                    <span>|</span>
+                    <a href="#" class="topdh15">消息通知</a>
+                </div>
+            </div>
+            <div class="top-dhright">
+                <a href="#" class="top-shop">
+                    <i class="fa fa-shopping-cart cart"></i>
+                    购物车
+                    <span>(0)</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="search"><!--搜索栏-->
+        <div class="search-s">
+            <div class="search-left">
+                <a class="mi-log" href="//www.mi.com./index.html"></a>
+            </div>
+            <div class="search-center">
+                <ul class="search-ul">
+                    <li class="search-space"></li>
+                    <li class="search-li">小米手机</li>
+                    <li class="search-li">红米</li>
+                    <li class="search-li">电视</li>
+                    <li class="search-li">笔记本</li>
+                    <li class="search-li">家电</li>
+                    <li class="search-li">新品</li>
+                    <li class="search-li">路由器</li>
+                    <li class="search-li">智能硬件</li>
+                    <li class="search-li">服务</li>
+                    <li class="search-li">社区</li>
+                </ul>
+            </div>
+            <div class="search-right">
+                <form class="search-input" action="">
+                    <input class="search-text" type="text">
+                    <input class="search-submit" type="submit" value="">
+                    <div class="minine">
+                        <a class="mi9">小米9</a>
+                        <a class="mi9SE">小米9SE</a>
+                    </div>
+                    <div class="search-fa">
+                        <i class="fa fa-search sfond"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="Carousel"><!--轮播页-->
+        <div class="category"><!--轮播页左边导航栏-->
+            <ul class="category-ul">
+                <li class="category-li">
+                    <a class="category-a" href="">手机 电话卡</a>
+                </li>
+                <li class="category-li">
+                    <a class="category-a" href="">电视 盒子</a>
+                </li>
+                <li class="category-li">
+                    <a class="category-a" href="">笔记本平板</a>
+                </li>
+                <li class="category-li">
+                    <a class="category-a" href="">家电插线板</a>
+                </li>
+                <li class="category-li">
+                    <a class="category-a" href="">出行 穿戴</a>
+                </li>
+                <li class="category-li">
+                    <a class="category-a" href="">智能 路由器</a>
+                </li>
+                <li class="category-li">
+                    <a class="category-a" href="">电源 配件</a>
+                </li>
+                <li class="category-li">
+                    <a class="category-a" href="">健康 儿童</a>
+                </li>
+                <li class="category-li">
+                    <a class="category-a" href="">耳机 音箱</a>
+                </li>
+                <li class="category-li">
+                    <a class="category-a" href="">生活 箱包</a>
+                </li>
+            </ul>
+
+        </div>
+        <div><!--轮播页轮播图-->
+
+        </div>
+    </div>
+</div><!--全局div-->
+</body>
+</html>

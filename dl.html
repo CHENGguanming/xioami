@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米登陆</title>
+    <style type="text/css">
+        .top-t{
+            width: 1130px;
+            height: 98px;
+            margin: 0 auto;
+        }
+        .mishop{
+            display: inline-block;
+            width: 200px;
+            height: 98px;
+            background-image: url("https://account.xiaomi.com/static/res/7f6f2f5/account-static/respassport/acc-2014/img/mistore_logo.png");
+        }
+        .middle-bgg{
+
+            display: block;
+            height: 588px;
+            color: -webkit-link;
+            background-image: url("https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f838fdcd77715410b441f2f56d8f10cd.jpg");
+            background-position: center;
+        }
+        .middle{
+             position: relative;
+
+         }
+        #log{
+            background-color:#ffffff;
+            position: absolute;
+            left: 1150px;
+            top: 40px;
+            text-align: center;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        a{
+            text-decoration: none;/*去text下划线*/
+            color: #757575;
+        }
+        .dlfs{
+            width: 410px;
+            height: 82px;
+            text-align: center;
+        }
+        .choose {
+            height: 27px;
+            display: inline-block;
+            margin: 30px;
+            font-size: 24px;
+            font-family: arial, "Hiragino Sans GB", "Microsoft YaHei", "微軟正黑體", "儷黑 Pro", sans-serif;
+        }
+
+        .left {
+            color: #f56600;
+            margin-right: 15px;
+        }
+
+        .right {
+            margin-right: 15px;
+            color: #666666;
+
+        }
+        .sp1{
+            width: 2px;
+            height: 29px;
+        }
+        .dlxx{
+            width: 410px;
+            height: 256px;
+        }
+
+        .zhmm{
+            width: 100%;
+            height: 124px;
+            color: #757575;
+            font-size: 14px;
+            font-family: arial,"Hiragino Sans GB","Microsoft YaHei","微軟正黑體","儷黑 Pro",sans-serif;
+            text-align: center;
+        }
+
+
+        .other{
+            width: 348px;
+            height: 49px;
+        }
+        #log-text,#log-pwd{
+            margin: 0 auto;
+            width: 346px;
+            height: 40px;
+            display: block;
+        }
+
+        #log-text{
+            margin-top: 16px;
+
+        }
+        #log-pwd{
+            margin-top: 14px;
+
+        }
+
+        #log-sub{
+            margin-top: 16px;
+            width: 350px;
+            height: 50px;
+            outline: none;
+            border: none;
+            background-color: #ff6700;
+            box-sizing: content-box;
+        }
+        .oth{
+           float: right;
+        }
+        .other{
+            float: left;
+            font-size: 14px;
+            font-family: arial,"Hiragino Sans GB","Microsoft YaHei","微軟正黑體","儷黑 Pro",sans-serif;
+            color: #ff6700;
+        }
+        fieldset {
+            display: inline-block;
+            width: 348px;
+            margin-top: 80px;
+            color: #999;
+            border: none;
+            border-top: 1px solid #999;
+            text-align: center;
+        }
+        .bottom-li{
+            display: block;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .bottom-p{
+            display: block;
+            text-align: center;
+            border: none;
+        }
+        .jt{
+            color: #333333;
+        }
+        p{
+            color: #757575;
+            font-size: 14px;
+            font-family: arial,"Hiragino Sans GB","Microsoft YaHei","微軟正黑體","儷黑 Pro",sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+<div><!--全局div-->
+    <div class="top"><!--顶部小米商城-->
+        <div class="top-t">
+            <a class="mishop" href="//www.mi.com/index.html">
+            </a>
+        </div>
+    </div><!--头部-->
+    <div class="middle"><!--主体-->
+        <a class="middle-bgg" href="https://www.mi.com/mi9/"></a>
+        <div id="log"><!--登陆页面-->
+            <div class="dlfs"><!--头部账号/扫码登录方式选择-->
+                <a href="#" class="choose left">账号登录</a>
+                <span class="sp1" style="color: #e0e0e0">|</span>
+                <a href="#" class="choose right">扫码登录</a>
+            </div><!--头部账号/扫码登录方式选择-->
+
+            <div class="dlxx"><!--中部账号密码输入登录以及注册忘密按键-->
+                <div class="zhmm"><!--输入账号和密码-->
+                    <div class="zh">
+                        <input type="text" placeholder="邮箱/手机号/小米账号" id="log-text">
+                    </div>
+                    <div class="mm">
+                        <input type="password" placeholder="密码" id="log-pwd">
+                    </div>
+                </div><!--输入账号和密码-->
+                <div class="dlann"><!--登录按钮-->
+                    <input type="submit" value="登录" id="log-sub">
+                </div><!--登录按钮-->
+                <div class="other"><!--手机登录，注册，忘记密码选择-->
+                    <a href="#" class="sjdx">手机短信登录/注册</a>
+                    <a href="#" class="oth ljzc">立即注册</a>
+                    <span class="oth shu">|</span>
+                    <a href="#" class="oth wjmm">忘记密码</a>
+                </div><!--手机登录，注册，忘记密码选择-->
+            </div><!--中部账号密码输入登录以及注册忘密按键-->
+
+            <div><!--尾部其他方式登录-->
+                <fieldset>
+                <legend>其他方式登录</legend>
+                </fieldset>
+            </div><!--尾部其他方式登录-->
+        </div><!--登陆页面-->
+    </div><!--主体-->
+    <div><!--尾部-->
+        <ul class="bottom">
+            <li class="bottom-li">
+                <a href="#" class="jt">简体</a>
+                <span>|</span>
+                <a href="#">繁体</a>
+                <span>|</span>
+                <a href="#">Eglishi</a>
+                <span>|</span>
+                <a href="#">常见问题</a>
+                <span>|</span>
+                <a href="#">隐私政策</a>
+            </li>
+        </ul>
+        <p class="bottom-p">
+            小米公司版权所有-京ICP备10046444-
+            <a class="bottom-beian" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134">
+                <img src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png" alt="">
+                </span>
+                京公网安备11010802020134号
+            </a>
+            -京ICP证110507号
+        </p>
+    </div><!--尾部-->
+</div>
+
+<script>
+
+    var sjdx = document.getElementsByClassName("sjdx")[0];
+
+    sjdx.addEventListener('click',function () {
+        var dlxx = document.getElementsByClassName("dlxx")[0];
+        dlxx.style.display="none"
+    })
+</script>
+</body>
+</html>

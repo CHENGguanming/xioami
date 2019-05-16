@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米注册</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .zt{
+            width: 1280px;
+            height: 881px;
+        }
+        .zc{
+            width: 854px;
+            height: 548px;
+            margin: 0 auto;
+        }
+        .zc-tb{
+            width: 786px;
+            height: 88px;
+            margin: 0 auto;
+        }
+        .milogo {
+            display: block;
+            width: 49px;
+            height: 48px;
+            cursor: default;
+            margin: 0 auto;
+            background-image: url(https://account.xiaomi.com/static/res/28f08d0/account-static/respassport/acc-2014/img/milogo.png);
+        }
+
+        .zc-tittle {
+            width: 786px;
+            height: 45px;
+            margin: 0 auto;
+        }
+
+        .zc-h {
+            display: block;
+            text-align: center;
+
+            font-size: 30px;
+            font-weight: normal;
+            line-height: 1.5;
+            font-family: arial, "Hiragino Sans GB", "Microsoft YaHei", "微軟正黑體", "儷黑 Pro", sans-serif;
+        }
+        .grxx{
+            width: 786px;
+            height: 386px;
+            margin: 0 auto;
+        }
+        .country{
+            width: 332px;
+            height: 25px;
+            margin: 0 auto;
+
+        }
+        .country-p {
+            font-size: 14px;
+            font-family: arial, "Hiragino Sans GB", "Microsoft YaHei", "微軟正黑體", "儷黑 Pro", sans-serif;
+        }
+
+        .country-xz{
+            width: 332px;
+            height: 42px;
+            margin: 0 auto;
+            border: 1px solid #e8e8e8;
+
+        }
+        .china{
+            width: 276px;
+            height: 42px;
+            line-height: 42px;
+            padding-left: 10px;
+            border-right: 1px solid #e8e8e8;
+        }
+        .china-logo{
+            display: inline-block;
+            background: url(https://account.xiaomi.com/static/res/0eeaaed/passport/oauth/images/icon_user.png);
+            width: 16px;
+            height: 16px;
+            line-height: 42px;
+            float: right;
+            margin-top: -29px;
+            margin-right: 16px;
+        }
+
+        .prompt{
+            width: 332px;
+            height: 20px;
+            margin: 0 auto;
+            font-size: 14px;
+            color: #666666;
+            margin-bottom: 15px;
+            font-family: arial,"Hiragino Sans GB", "Microsoft YaHei","微軟正黑體","儷黑 Pro", sans-serif;
+        }
+
+        .sjh{
+            width: 332px;
+            height: 25px;
+            color: #333333;
+            font-size: 14px;
+            margin: 0 auto;
+            padding-bottom: 5px;
+            font-family: arial,"Hiragino Sans GB", "Microsoft YaHei","微軟正黑體","儷黑 Pro", sans-serif;
+        }
+        .sjh-shuru{
+            width: 332px;
+            height: 42px;
+            margin: 0 auto;
+            border: 1px solid #e8e8e8;
+        }
+        .sjh-qianzhui{
+            width: 74px;
+            height: 42px;
+            border: 1px solid #e8e8e8;
+        }
+        .p86{
+            width: 24px;
+            height: 40px;
+            margin-left: 15px;
+            line-height: 40px;
+        }
+        .i2{
+            display: inline-block;
+
+            float: right;
+            margin-top: -24px;
+            margin-right: 15px;
+            border-width: 5px;/*用border制作三角*/
+            border-style: solid;
+            border-color: #9d9d9d transparent transparent transparent;
+        }
+        .sjh-input{
+            width: 256px;
+            height: 42px;
+            float: right;
+            margin-top: -44px;
+            border: 1px solid #e8e8e8;
+        }
+        .dll{
+            width: 330px;
+            height: 42px;
+            margin: 0 auto;
+            margin-top: 15px;
+
+        }
+        .dll-sub{
+            display: inline-block;
+            width: 330px;
+            height: 42px;
+            background-color: #ff6700;
+            color: #ffffff;
+            font-size: 14px;
+            outline: none;
+            border-style: none;
+            cursor: pointer;
+        }
+        .treaty{
+            width: 397px;
+            height: 40px;
+            margin: 0 auto;
+            line-height: 40px;
+            font-size: 14px;
+            color: #9d9d9d;
+            font-family: arial,"Hiragino Sans GB", "Microsoft YaHei","微軟正黑體","儷黑 Pro", sans-serif;
+        }
+        .treaty-i{
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            margin: 10px 0;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAk5JREFUOBGVlctrU1EQxn/3tqZVKxQRCirdWRRX4sKuK7j1GYoLN4JYULT6FwiuFSOiEf+A+iq6FwV3uhIXWqmugigVKT5iTUKa6zfn5CQ3MUnTgXPPa+Y7c+bMNzeihyRHGGWAcSJGnFpCkVUK0VN+dDOLOm0kx9lNhhmBTartFODWOuCyAD+rvaJCPprnQ7t9C2ACMdPMCuys2oRmCKxVpERNrcKi2l2Nb0WPNKpLQz3JCiLmHkOcYJhNQaFnX1YIysxzn9MCsmOcD94m5ryAjvUNZlZDim2GrLuVR/GAyVH2uGuawnrFbqMQubjL1qJkJ81occKN1/rEg5Bpi4jZ2iNKYpcagxxIXb475OgOuPIern6UpYCDmFvKCMOKXZ751Ajbvo8GWudbxuDyCxjbBd8+6QmqzX17WsNQzsbybHMjz4LK/izc/AVTF/zKyDaBPReYolJ4A7cPB81mb7kqAqT8bu6xIiJs2AjTOeWhPJ08Bdv3wpd3kDsEf7sSRf7V+EPCcgoOFp7B3Dm/lL0G4/tgaRGuH4Ti9xbVxsQwRM3YuOnoZAxIy8s78PCSVrTx86vApuD3UlqjOTZbT8mCY0pykhvKposK6v+SUWpWS62P0K61qoUVctEcsz4PS+KkcbOTVIq9wczG8zpvQwcYPWHBEb2kc9YrxmcViVB5vIcG8kDXLvNYTS71KeaAFQdVnGDRSBurFkmNM5R4K4X+y5ccCZXGQN2jBPTQu2IxLNBuBbbKa3mWd6EKRvW+I2DQafwCjE0mlrNr/AL+AbcOsj+c24+/AAAAAElFTkSuQmCC);
+        }
+        .treaty-yhxy,.treaty-yszc{
+            display: inline-block;
+
+            color: #333333;
+            font-weight: bold;
+        }
+
+        .bottom-li {
+            display: block;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .bottom-p {
+            display: block;
+            text-align: center;
+            border: none;
+        }
+
+        .jt {
+            color: #333333;
+        }
+
+        p {
+            color: #757575;
+            font-size: 14px;
+            font-family: arial, "Hiragino Sans GB", "Microsoft YaHei", "微軟正黑體", "儷黑 Pro", sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+<div class="zt">
+    <div class="zc"><!--注册-->
+        <div class="zc-tb"><!--图标-->
+            <a class="milogo" href="#"></a>
+        </div><!--图标-->
+        <div class="zc-tittle"><!--注册标题-->
+            <h4 class="zc-h">注册小米账号</h4>
+        </div><!--注册标题-->
+        <div><!--注册信息填入-->
+            <div class="grxx"><!--个人信息填入-->
+                <div class="country"><!--p国家/地区-->
+                    <h4 class="country-p">国家/地区</h4>
+                </div><!--p国家/地区-->
+                <div class="country-xz">
+                    <p class="china">中国</p>
+                    <i class="china-logo"></i>
+                </div><!--国家选项-->
+                <div class="prompt">
+                    成功注册账号后，国家/地区将不能被修改
+                </div><!--提示信息：注册后不可修改-->
+                <div class="sjh">
+                    手机号
+                </div><!--p手机号-->
+                <div class="sjh-shuru">
+                    <div class="sjh-qianzhui"><!--电话号码前缀-->
+                        <p class="p86">+86</p>
+                        <i class="i2"></i>
+                    </div>
+                    <div><!--电话号码输入框-->
+                        <input type="text" class="sjh-input" placeholder="请输入手机号码">
+                    </div>
+
+                </div><!--填入手机号-->
+                <div class="dll">
+                    <input class="dll-sub" type="submit" value="立即注册">
+                </div><!--注册按钮-->
+            </div><!--个人信息填入-->
+            <div class="treaty"><!--协议默认打钩-->
+                <i class="treaty-i"></i>
+                <a class="treaty-a">注册帐号即表示您同意并愿意遵守小米 </a>
+                <a class="treaty-yhxy" href="">用户协议</a>和
+                <a class="treaty-yszc" href="">隐私政策</a>
+            </div><!--协议默认打钩-->
+        </div><!--注册信息填入-->
+    </div>
+    <div><!--尾部-->
+        <div><!--尾部-->
+            <ul class="bottom">
+                <li class="bottom-li">
+                    <a href="#" class="jt">简体</a>
+                    <span>|</span>
+                    <a href="#">繁体</a>
+                    <span>|</span>
+                    <a href="#">Eglishi</a>
+                    <span>|</span>
+                    <a href="#">常见问题</a>
+                    <span>|</span>
+                    <a href="#">隐私政策</a>
+                </li>
+            </ul>
+            <p class="bottom-p">
+                小米公司版权所有-京ICP备10046444-
+                <a class="bottom-beian"
+                   href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134">
+                    <img src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png"
+                         alt="">
+                    </span>
+                    京公网安备11010802020134号
+                </a>
+                -京ICP证110507号
+            </p>
+        </div><!--尾部-->
+    </div>
+</div>
+</body>
+</html>

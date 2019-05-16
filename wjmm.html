@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>重置密码</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .div-quanju{
+
+            /*width: 100%;
+            min-height: 100%;
+            background-color: #9d9d9d;*/
+        }
+        .czmm{
+            width: 854px;
+            height: 496px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            /*margin: -248px 0  0 -427px;*/
+        }
+        .zc-tb{
+            width: 786px;
+            height: 88px;
+            margin: 0 auto;
+        }
+        .milogo {
+            display: block;
+            width: 49px;
+            height: 48px;
+            cursor: default;
+            margin: 0 auto;
+            background-image: url(https://account.xiaomi.com/static/res/28f08d0/account-static/respassport/acc-2014/img/milogo.png);
+        }
+        .cz-tittle {
+            width: 786px;
+            height: 45px;
+            margin: 0 auto;
+        }
+
+        .cz-h {
+            display: block;
+            text-align: center;
+            font-size: 30px;
+            font-weight: normal;
+            line-height: 1.5;
+            font-family: arial, "Hiragino Sans GB", "Microsoft YaHei", "微軟正黑體", "儷黑 Pro", sans-serif;
+        }
+        .czmm-zhuti{
+            width: 332px;
+            height: 332px;
+            margin: 0 auto;
+            /*background-color: aqua;*/
+        }
+        .czmm-xbt{
+            width: 330px;
+            height: 30px;
+            margin: 10px 0;
+            line-height: 20px;
+        }
+        .cz-xbt{
+            display: inline-block;
+            color: #666666;
+            font-size: 14px;
+            font-family: arial, "Hiragino Sans GB", "Microsoft YaHei", "微軟正黑體", "儷黑 Pro", sans-serif;
+        }
+        .czmm-input{
+            width: 332px;
+            height: 57px;
+        }
+        .cz-input{
+            display: inline-block;
+            border: 1px solid #e8e8e8;
+            width: 328px;
+            height: 38px;
+            color: #666666;
+        }
+        .czmm-yzm{
+            width: 330px;
+            height: 42px;
+            position: relative;
+        }
+        .cz-yzminput{
+            display: inline-block;
+            position: absolute;
+            width: 190px;
+            height: 38px;
+        }
+        .cz-yzmimg{
+            display: inline-block;
+            position: absolute;
+            left: 200px;
+            width: 125px;
+            height: 42px;
+            cursor: pointer;
+        }
+        .czmm-help{
+            width: 332px;
+            height: 50px;
+            color: #c5c5c5;
+            font-size: 14px;
+            font-family: arial, "Hiragino Sans GB", "Microsoft YaHei", "微軟正黑體", "儷黑 Pro", sans-serif;
+        }
+        .czmm-a{
+            color: #46639c;
+            float: right;
+            margin: 10px 0;
+        }
+        .czmm-xyb{
+            width: 332px;
+            height: 42px;
+        }
+        .cz-xyb{
+            display: inline-block;
+            width: 330px;
+            height: 42px;
+            color: #ffffff;
+            background-color: #ff6700;
+            cursor: pointer;
+            outline: none;
+            border: 1px solid rgba(186,186,186,0.3);
+        }
+        .cz-wb{
+
+           margin-top: 850px;
+        }
+        .bottom-li {
+            display: block;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .bottom-p {
+            display: block;
+            text-align: center;
+            border: none;
+        }
+        .jt {
+            color: #333333;
+        }
+        p {
+            color: #757575;
+            font-size: 14px;
+            font-family: arial, "Hiragino Sans GB", "Microsoft YaHei", "微軟正黑體", "儷黑 Pro", sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+<div class="div-quanju"><!--全局-->
+    <div class="czmm"><!--主体重置密码-->
+        <div class="zc-tb"><!--小米图标-->
+            <a class="milogo" href="#"></a>
+        </div>
+        <div class="cz-tittle"><!--重置密码标题-->
+            <h4 class="cz-h">重置密码</h4>
+        </div>
+        <div class="czmm-zhuti"><!--重置密码操作及提示-->
+            <div class="czmm-xbt"><!--输入提示小标题-->
+                <h5 class="cz-xbt">
+                    请输入注册的邮箱地址、手机号码或小米帐号：
+                </h5>
+            </div>
+            <div class="czmm-input"><!--输入账号-->
+                <input class="cz-input" type="text" placeholder="邮箱/手机号码/小米账号">
+            </div>
+            <div class="czmm-yzm"><!--验证码-->
+                <!--输入验证码-->
+                <input class="cz-yzminput" type="text" placeholder="图片验证码">
+                <!--显示验证码-->
+                <img class="cz-yzmimg" src="imgs/yzm-01.PNG" alt="">
+            </div>
+            <div class="czmm-help"><!--帮助及提示-->
+                用户输入手机号码时请正确选择区域前缀，如：台湾：                +8869*******，香港：+8526*******
+                <a class="czmm-a" href="">帮助</a>
+            </div>
+            <div class="czmm-xyb"><!--下一步-->
+                <input class="cz-xyb" type="submit" value="下一步">
+            </div>
+        </div>
+    </div>
+    <div class="cz-wb"><!--尾部-->
+        <ul class="bottom">
+            <li class="bottom-li">
+                <a href="#" class="jt">简体</a>
+                <span>|</span>
+                <a href="#">繁体</a>
+                <span>|</span>
+                <a href="#">Eglishi</a>
+                <span>|</span>
+                <a href="#">常见问题</a>
+                <span>|</span>
+                <a href="#">隐私政策</a>
+            </li>
+        </ul>
+        <p class="bottom-p">
+            小米公司版权所有-京ICP备10046444-
+            <a class="bottom-beian"
+               href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134">
+                <img src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png"
+                     alt="">
+                </span>
+                京公网安备11010802020134号
+            </a>
+            -京ICP证110507号
+        </p>
+    </div><!--尾部-->
+</div>
+</body>
+</html>
